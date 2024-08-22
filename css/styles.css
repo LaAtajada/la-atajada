@@ -1,0 +1,291 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF; /* Blanco */
+    color: #000000; /* Negro */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos generales para el header */
+header {
+    position: relative; /* Necesario para que el logo se pueda posicionar absolutamente */
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #f39c1f; /* Fondo naranja */
+}
+
+/* Estilos para el contenedor del logo */
+.logo-container {
+    position: relative;
+}
+
+/* Posicionar el logo en la esquina superior izquierda */
+.logo {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    max-width: 75px;
+    height: auto;
+}
+
+/* Mantener el título centrado */
+.logo-container h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000; /* Blanco para el título */
+}
+
+/* Estilos para los servicios */
+.services-section {
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+.services-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #001F54; /* Azul Marino */
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-item {
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.service-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Título */
+.header-top h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+/* Navegación */
+nav {
+    margin-top: 1rem; /* Añade espacio entre el título y la navegación */
+}
+
+/* Estilos generales para la navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000; /* Cambia según tu paleta de colores */
+    font-weight: bold;
+}
+
+/* Estilos para el ícono de menú */
+.menu-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Mueve el ícono a la esquina superior derecha */
+    font-size: 2rem;
+    cursor: pointer;
+    color: #000; /* Blanco para que contraste con el fondo naranja */
+    display: none; /* Ocultar por defecto en pantallas grandes */
+}
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Oculta el menú por defecto */
+        flex-direction: column;
+        background-color: #f39c1f; /* Fondo del menú desplegable */
+        position: absolute;
+        top: 60px; /* Ajusta según la altura del header */
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul.show {
+        display: flex; /* Muestra el menú cuando se hace clic en el ícono */
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    .menu-icon {
+        display: block; /* Muestra el ícono del menú en pantallas pequeñas */
+    }
+}
+
+/* Contenido principal */
+main {
+    padding: 2rem;
+    background-color: #FFFFFF; /* Blanco */
+    color: #000000; /* Negro */
+    flex: 1; /* Esto asegura que el contenido principal ocupe el espacio disponible */
+}
+
+/* Estilo para la lista de servicios */
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea dos columnas en pantallas grandes */
+    gap: 1rem; /* Espacio entre los elementos */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 0 1rem; /* Padding lateral */
+}
+
+/* Estilo para cada item de servicio */
+.service-item {
+    background-color: #FFFFFF; /* Fondo blanco para cada servicio */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centra el contenido */
+}
+
+/* Estilo para las imágenes */
+.service-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Hacer que la lista sea de una columna en pantallas pequeñas */
+@media (max-width: 768px) {
+    .services-list {
+        grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
+    }
+}
+
+/* Contenedor de WhatsApp */
+.whatsapp-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+/* Estilos para el ícono de WhatsApp */
+.whatsapp-icon {
+    width: 450px; /* Aumenta el tamaño aquí */
+    height: 450px; /* Aumenta el tamaño aquí */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px; /* Espacio entre el ícono y el texto */
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para el texto opcional */
+.whatsapp-text {
+    font-size: 1.2rem;
+    color: #333333; /* Gris oscuro para el texto */
+    max-width: 600px; /* Limitar el ancho del texto */
+    margin: 0 auto; /* Centrar el texto */
+}
+
+
+.contact-icons {
+    display: flex;
+    justify-content: center; /* Alinea los íconos horizontalmente en el centro */
+    align-items: center; /* Asegura que estén alineados verticalmente */
+    gap: 50px; /* Espacio entre los íconos */
+    margin-top: 50px;
+}
+
+.social-icon {
+    width: 150px; /* Ajusta el tamaño de los íconos */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Efecto de agrandamiento al pasar el ratón */
+}
+
+/* Media query para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+    .contact-icons {
+        gap: 25px; /* Reduce el espacio entre íconos en pantallas pequeñas */
+    }
+
+    .social-icon {
+        width: 75px; /* Reduce el tamaño de los íconos en pantallas pequeñas */
+    }
+}
+
+/* Media query para pantallas muy pequeñas (teléfonos más pequeños) */
+@media (max-width: 480px) {
+    .contact-icons {
+        gap: 25px; /* Reduce aún más el espacio entre íconos */
+    }
+
+    .social-icon {
+        width: 75px; /* Tamaño aún más pequeño para teléfonos */
+    }
+}
+
+/* Pie de página */
+footer {
+    background-color: #f39c1f; /* Naranja */
+    color: #000000; /* Negro */
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto; /* Esto empuja el pie de página hacia el fondo del contenedor flex */
+}
+
+
+/* Botones */
+button {
+    background-color: #f39c1f; /* Naranja */
+    color: #FFFFFF; /* Blanco */
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000; /* Negro */
+}
