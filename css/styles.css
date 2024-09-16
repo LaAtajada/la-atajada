@@ -42,10 +42,29 @@ header img {
     }
 }
 
-/* Estilos para el contenedor del logo */
+/* Asegúrate de que el contenedor del logo abarque todo el ancho */
 .logo-container {
-    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center; /* Centrar la imagen horizontalmente */
 }
+
+/* Haz que la imagen ocupe todo el ancho disponible */
+.logo-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
+    display: block;
+}
+
+
+/* Opcional: Ajustes de estilo para el menú de navegación */
+nav {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px; /* Espaciado opcional entre el banner y el menú */
+}
+
 
 /* Posicionar el logo en la esquina superior izquierda */
 .logo {
