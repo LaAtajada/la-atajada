@@ -259,40 +259,46 @@ main {
 }
 
 
-/* Ocultar el menú por defecto en móviles */
+/* Ocultar el menú por defecto */
+nav {
+    display: none;
+}
+
+/* Mostrar el menú cuando se activa */
+nav.show {
+    display: block;
+}
+
+/* Estilos para el icono de hamburguesa */
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px; /* Tamaño del icono de hamburguesa */
+}
+
+/* Opcional: estilo del menú */
 #nav-links {
-    display: none; /* No mostrar el menú hasta que se presione el icono */
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center; /* Centrar las opciones del menú */
-    background-color: #fff; /* Opcional: color de fondo */
 }
 
-/* Estilo del menú desplegado */
 #nav-links li {
-    padding: 10px 0; /* Espacio entre los enlaces */
+    padding: 10px;
 }
 
-#nav-links li a {
+#nav-links a {
     text-decoration: none;
-    color: #000; /* Color de los enlaces */
+    color: #000; /* Color del texto */
 }
 
-/* Mostrar el menú cuando se active */
-.show {
-    display: block; /* El menú se muestra cuando se agrega la clase "show" */
-}
-
-/* Media query para pantallas más grandes */
+/* Media query para pantallas grandes */
 @media (min-width: 768px) {
-    #nav-links {
-        display: flex; /* Mostrar el menú horizontalmente en pantallas grandes */
-        justify-content: center; /* Centrar los enlaces horizontalmente */
+    nav {
+        display: block;
     }
 
-    #nav-links li {
-        margin: 0 15px; /* Espacio entre los enlaces en pantallas grandes */
+    .menu-icon {
+        display: none;
     }
 }
 
