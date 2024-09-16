@@ -67,25 +67,6 @@ nav {
 }
 
 
-/* Posicionar el logo en la esquina superior izquierda */
-.logo {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    max-width: 75px;
-    height: auto;
-}
-
-/* Mantener el título centrado */
-.logo-container h1 {
-    margin-top: 0;
-    margin-bottom: 0;
-    position: absolute;
-    max-width: 75px;
-    height: auto;
-    font-weight: bold;
-    color: #000; /* Blanco para el título */
-}
 
 /* Estilos para los servicios */
 .services-section {
@@ -130,11 +111,7 @@ nav {
     }
 }
 
-/* Título */
-.header-top h1 {
-    margin: 0;
-    font-size: 1.5rem;
-}
+
 /* Navegación */
 nav {
     margin-top: 1rem; /* Añade espacio entre el título y la navegación */
@@ -161,50 +138,6 @@ nav ul li a {
 }
 
 /* Ocultar el menú por defecto */
-nav {
-    display: none;
-}
-
-/* Mostrar el menú cuando se activa */
-nav.show {
-    display: flex;
-}
-
-/* Estilos para el icono de hamburguesa */
-.menu-icon {
-    cursor: pointer;
-    font-size: 24px; /* Tamaño del icono de hamburguesa */
-}
-
-/* Opcional: estilo del menú */
-#nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#nav-links li {
-    padding: 10px;
-}
-
-#nav-links a {
-    text-decoration: none;
-    color: #000; /* Color del texto */
-}
-
-@media (min-width: 768px) {
-    nav {
-        display: block;
-    }
-
-    .menu-icon {
-        display: none;
-    }
-}
-
-
-
-
 
 
 
