@@ -167,7 +167,7 @@ nav {
 
 /* Mostrar el menú cuando se activa */
 nav.show {
-    display: block;
+    display: flex;
 }
 
 /* Estilos para el icono de hamburguesa */
