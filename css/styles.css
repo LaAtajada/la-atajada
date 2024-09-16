@@ -58,14 +58,54 @@ header img {
     display: block;
 }
 
+/* Navegación */
 
-/* Opcional: Ajustes de estilo para el menú de navegación */
-nav {
-    width: 100%;
-    text-align: center;
-    margin-top: 10px; /* Espaciado opcional entre el banner y el menú */
+/* Estilos para el icono de hamburguesa */
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px; /* Tamaño del icono de hamburguesa */
+    display: none; /* Oculta el icono por defecto en pantallas grandes */
 }
 
+/* Ocultar el menú por defecto */
+nav {
+    display: none; /* Oculta el menú de navegación por defecto */
+}
+
+/* Mostrar el menú cuando se activa */
+nav.show {
+    display: block;
+}
+
+/* Estilo para el menú de navegación */
+#nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff; /* Fondo blanco para el menú */
+    position: absolute; /* Posiciona el menú fuera del flujo normal del documento */
+    top: 60px; /* Ajusta según la altura del header */
+    left: 0;
+    width: 100%; /* Asegura que el menú tenga el ancho completo */
+}
+
+#nav-links li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Línea separadora entre los elementos del menú */
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: #000; /* Color del texto */
+    display: block; /* Asegura que el enlace ocupe todo el espacio del li */
+}
+
+/* Mostrar el icono de hamburguesa en pantallas pequeñas */
+@media (max-width: 767px) {
+    .menu-icon {
+        display: block; /* Muestra el icono de hamburguesa en pantallas pequeñas */
+    }
+}
 
 
 /* Estilos para los servicios */
@@ -111,33 +151,6 @@ nav {
     }
 }
 
-
-/* Navegación */
-nav {
-    margin-top: 1rem; /* Añade espacio entre el título y la navegación */
-}
-
-/* Estilos generales para la navegación */
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-
-nav ul li a {
-    text-decoration: none;
-    color: #000000; /* Cambia según tu paleta de colores */
-    font-weight: bold;
-}
-
-/* Ocultar el menú por defecto */
 
 
 
