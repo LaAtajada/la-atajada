@@ -160,41 +160,53 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Estilos para el ícono de menú */
-.menu-icon {
-    position: absolute;
-    top: 10px;
-    right: 10px; /* Mueve el ícono a la esquina superior derecha */
-    font-size: 2rem;
-    cursor: pointer;
-    color: #000; /* Blanco para que contraste con el fondo naranja */
-    display: none; /* Ocultar por defecto en pantallas grandes */
+/* Ocultar el menú por defecto */
+nav {
+    display: none;
 }
-/* Estilo responsivo */
-@media (max-width: 768px) {
-    nav ul {
-        display: none; /* Oculta el menú por defecto */
-        flex-direction: column;
-        background-color: #f39c1f; /* Fondo del menú desplegable */
-        position: absolute;
-        top: 100px; /* Ajusta según la altura del header */
-        left: 0;
-        width: 100%;
-        text-align: center;
-    }
 
-    nav ul.show {
-        display: flex; /* Muestra el menú cuando se hace clic en el ícono */
-    }
+/* Mostrar el menú cuando se activa */
+nav.show {
+    display: block;
+}
 
-    nav ul li {
-        margin: 1rem 0;
+/* Estilos para el icono de hamburguesa */
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px; /* Tamaño del icono de hamburguesa */
+}
+
+/* Opcional: estilo del menú */
+#nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-links li {
+    padding: 10px;
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: #000; /* Color del texto */
+}
+
+@media (min-width: 768px) {
+    nav {
+        display: block;
     }
 
     .menu-icon {
-        display: block; /* Muestra el ícono del menú en pantallas pequeñas */
+        display: none;
     }
 }
+
+
+
+
+
+
 
 /* Contenido principal */
 main {
