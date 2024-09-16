@@ -313,6 +313,46 @@ main {
     }
 }
 
+
+/* Ocultar el menú por defecto en móviles */
+#nav-links {
+    display: none; /* No mostrar el menú hasta que se presione el icono */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centrar las opciones del menú */
+    background-color: #fff; /* Opcional: color de fondo */
+}
+
+/* Estilo del menú desplegado */
+#nav-links li {
+    padding: 10px 0; /* Espacio entre los enlaces */
+}
+
+#nav-links li a {
+    text-decoration: none;
+    color: #000; /* Color de los enlaces */
+}
+
+/* Mostrar el menú cuando se active */
+.show {
+    display: block; /* El menú se muestra cuando se agrega la clase "show" */
+}
+
+/* Media query para pantallas más grandes */
+@media (min-width: 768px) {
+    #nav-links {
+        display: flex; /* Mostrar el menú horizontalmente en pantallas grandes */
+        justify-content: center; /* Centrar los enlaces horizontalmente */
+    }
+
+    #nav-links li {
+        margin: 0 15px; /* Espacio entre los enlaces en pantallas grandes */
+    }
+}
+
+
+
 /* Pie de página */
 footer {
     background-color: #f39c1f; /* Naranja */
