@@ -16,6 +16,30 @@ header {
     text-align: center;
     padding: 2rem 0;
     background-color: #f39c1f; /* Fondo naranja */
+    width: 100%;
+    height: auto;
+    overflow: hidden; /* Para que no haya desbordamiento del contenido */
+    position: relative; /* Para posicionamiento relativo si es necesario */
+}
+
+/* Estilo de la imagen del banner */
+header img {
+    width: 100%; /* La imagen siempre ocupará el 100% del ancho del dispositivo */
+    height: auto; /* Mantén la proporción original de la imagen */
+    display: block; /* Elimina el espacio blanco alrededor de la imagen */
+    object-fit: cover; /* Hace que la imagen cubra todo el contenedor del header */
+}
+
+
+/* Responsividad adicional para asegurar un ajuste óptimo en todos los tamaños de pantalla */
+@media (max-width: 768px) {
+    header {
+        height: auto; /* Ajusta la altura según el contenido en pantallas pequeñas */
+    }
+
+    header img {
+        object-fit: cover; /* Asegura que la imagen cubra toda el área del header en móviles */
+    }
 }
 
 /* Estilos para el contenedor del logo */
