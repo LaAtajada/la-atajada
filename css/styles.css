@@ -14,7 +14,7 @@ body {
 header {
     position: relative; /* Necesario para que el logo se pueda posicionar absolutamente */
     text-align: center;
-    padding: 2rem 0;
+    padding: 10px 0; /* Reduce el espacio interno (padding) del header */
     background-color: #f39c1f; /* Fondo naranja */
     width: 100%;
     height: auto;
@@ -53,7 +53,8 @@ header img {
 .logo-container img {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
+    max-height: 150px; /* Limita la altura máxima del logo */
+    object-fit: contain; /* Asegura que la imagen cubra el contenedor sin deformarse */
     display: block;
 }
 
