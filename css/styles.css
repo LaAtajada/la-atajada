@@ -15,7 +15,7 @@ header {
     position: relative; /* Necesario para que el logo se pueda posicionar absolutamente */
     text-align: center;
     padding: 10px 0; /* Reduce el espacio interno (padding) del header */
-    background-color: #000000; /* Fondo naranja */
+    background-color: #FFFFFF; /* Fondo Blanco */
     width: 100%;
     height: auto;
     overflow: hidden; /* Para que no haya desbordamiento del contenido */
