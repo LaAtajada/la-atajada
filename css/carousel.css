@@ -24,10 +24,11 @@ body {
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
+    height: 32rem;
     max-width: 100%;
     height: auto;
     object-fit: cover;
-    
+
   }
   .carousel-item > img {
     position: absolute;
