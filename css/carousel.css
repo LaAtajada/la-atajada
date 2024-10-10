@@ -24,7 +24,10 @@ body {
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    height: 32rem;
+    position: relative;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: auto; /* Mantén la proporción de la imagen */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
   }
   .carousel-item > img {
     position: absolute;
@@ -35,6 +38,7 @@ body {
     width: fit-content;
   }
   
+ 
   
   /* MARKETING CONTENT
   -------------------------------------------------- */
