@@ -347,9 +347,9 @@ button:hover {
     margin: auto;
     padding: 11.5px 18px;
     transition: all 0.2s ease;
-    border: 3px solid #552da8;
+    border: 3px solid #f39c1f;
     border-radius: 50px;
-    background: #552da8;
+    background: #f39c1f;
     cursor: pointer;
   }
   
